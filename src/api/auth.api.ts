@@ -15,8 +15,9 @@ export const registerApi = async (payload: {
     email: string;
     password: string;
 }) => {
-    const { data } = await api.post(ENDPOINTS.REGISTER, payload);
-    return data;
+    const res = await api.post(ENDPOINTS.REGISTER, payload);
+    console.log("signup response :", res);
+    return res.data.data;
 };
 
 export const getProfileApi = async () => {
