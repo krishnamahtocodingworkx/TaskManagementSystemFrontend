@@ -1,6 +1,6 @@
 import AuthButton from "../components/buttons/AuthButton";
 import { useLogout } from "../hooks/useLogout";
-import {  useProfile2 } from "../hooks/useProfile";
+import { useProfile2 } from "../hooks/useProfile";
 
 const Dashboard = () => {
     const { mutate } = useProfile2();
@@ -15,14 +15,16 @@ const Dashboard = () => {
 
             {/* {data && <pre>{JSON.stringify(data, null, 2)}</pre>} */}
 
-            <AuthButton
-                text="Login"
-                clickHandler={() => mutate()}
-            // disabled={!loginForm.isValid || loading}
-            // isLoading={loading}
-            // isLoading={isPending || loginForm.isSubmitting}
-            />
-            <button onClick={() => logout()} className="p-4 border ">Logout </button>
+            <div className="w-[20vw] gap-5 flex">
+                <AuthButton
+                    text="Fetch MY Details"
+                    clickHandler={() => mutate()}
+                // disabled={!loginForm.isValid || loading}
+                // isLoading={loading}
+                // isLoading={isPending || loginForm.isSubmitting}
+                />
+                <button onClick={() => logout()} className="p-4 border ">Logout </button>
+            </div>
         </div>
     );
 };
