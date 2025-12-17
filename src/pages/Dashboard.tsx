@@ -1,9 +1,9 @@
 import AuthButton from "../components/buttons/AuthButton";
 import { useLogout } from "../hooks/useLogout";
-import { useProfile, useProfile2 } from "../hooks/useProfile";
+import {  useProfile2 } from "../hooks/useProfile";
 
 const Dashboard = () => {
-    const { data, isError, mutate } = useProfile2();
+    const { mutate } = useProfile2();
     const { mutate: logout } = useLogout();
 
     return (

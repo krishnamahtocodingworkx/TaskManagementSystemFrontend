@@ -1,6 +1,6 @@
 import axios from "axios";
-import { store } from "../store/store";
-import { logout } from "../store/slices/authSlice";
+// import { store } from "../store/store";
+// import { logout } from "../store/slices/authSlice";
 
 const api = axios.create({
     baseURL: "https://task-management-2-aad9.onrender.com",

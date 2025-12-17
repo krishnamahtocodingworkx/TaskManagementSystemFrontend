@@ -1,11 +1,11 @@
 import { RouterProvider } from 'react-router-dom'
 import './App.css'
 import { router } from './routes'
-import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { setCredentials } from './store/slices/authSlice';
-import { useProfile } from './hooks/useProfile';
-import Spinner from './components/spinner';
+// import { useDispatch } from 'react-redux';
+// import { useEffect } from 'react';
+// import { setCredentials } from './store/slices/authSlice';
+// import { useProfile } from './hooks/useProfile';
+// import Spinner from './components/spinner';
 
 function App() {
   // const dispatch = useDispatch();
